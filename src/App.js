@@ -8,12 +8,27 @@ import Header from "./Header";
 function App() {
   return (
     <Router>
-      <Header />
       <Routes>
-        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <Header />
+              <CheckoutPage />
+            </>
+          }
+        />
         <Route path="/login" element={<LoginPage />} />
-        {/* This the default Route */}
-        <Route path="/" element={<HomePage />} />
+
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <HomePage />
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
