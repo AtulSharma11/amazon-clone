@@ -61,7 +61,6 @@ function HomePage() {
           image="https://m.media-amazon.com/images/I/61NlIib88JL._AC_SL1500_.jpg"
         />
       </div>
-      {/* Product */}
     </div>
   );
 }
